@@ -1,12 +1,8 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 1,
   "workspaces": {
     "": {
       "name": "zero-onboarding",
-      "dependencies": {
-        "pg": "^8.16.3",
-      },
       "devDependencies": {
         "@rocicorp/prettier-config": "^0.4.0",
         "@rocicorp/zero": "0.25.9",
