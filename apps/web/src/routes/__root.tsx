@@ -36,7 +36,7 @@ function RootDocument({children}: {children: React.ReactNode}) {
       </head>
       <body>
         <ZeroProvider
-          server="http://localhost:4848"
+          server={import.meta.env.VITE_ZERO_SERVER ?? "http://localhost:4848"}
           schema={schema}
           mutators={mutators}
           userID="anon"

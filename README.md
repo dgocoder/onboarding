@@ -31,7 +31,15 @@ Prereqs: Bun + Docker.
 - In one terminal, start Postgres (includes schema + seed data): `cd packages/db && docker compose up`
 - In another terminal, start the web app: `cd apps/web && bun dev`
 
-On `maximal`, also run the `zero-cache-dev` command from the Installation guide (the example app expects Zero at `http://localhost:4848`).
+On `maximal`, also run the `zero-cache-dev` command from the Installation guide. The app defaults to `http://localhost:4848` but can be configured via the `VITE_ZERO_SERVER` environment variable.
+
+### Environment variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `VITE_ZERO_SERVER` | URL of the Zero sync server | `http://localhost:4848` |
+
+Copy `apps/web/.env.example` to `apps/web/.env` and modify as needed.
 
 ## Trying your own schema
 
