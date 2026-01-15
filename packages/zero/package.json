@@ -6,6 +6,9 @@
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "dev": "bun --env-file=../../.env -- zero-cache-dev"
+  },
   "dependencies": {
     "@zero-onboarding/db": "workspace:*",
     "zod": "^4.1.12"
