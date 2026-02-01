@@ -1,5 +1,7 @@
 FROM oven/bun:1 AS builder
 
+ARG VITE_ZERO_SERVER
+
 WORKDIR /app
 
 COPY bun.lock package.json tsconfig.base.json ./
